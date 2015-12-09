@@ -1,9 +1,9 @@
-// ==========================================================================
+/* ==========================================================================
 // Base – Code
-// ==========================================================================
+========================================================================== */
 code, kbd, pre, samp {
-  @include font-size($base-code-font-size);
-  @include line-height($base-code-line-height);
+  @mixin font-size $base-code-font-size;
+  @mixin line-height $base-code-line-height;
   word-wrap: break-word;
   font-family: $base-code-font-family;
   color: $base-code-color;

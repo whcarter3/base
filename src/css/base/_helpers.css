@@ -1,8 +1,8 @@
-// ==========================================================================
+/* ==========================================================================
 // Base – Helpers
-// ==========================================================================
+========================================================================== */
 
-// General Resets
+/* General Resets */
 .no-margin { margin: 0; }
 .no-padding { padding: 0; }
 .no-float { float: none; }
@@ -16,7 +16,7 @@
   cursor: default;
 }
 
-// Font Weights
+/* Font Weights */
 .font-100 { font-weight: @font-100; }
 .font-200 { font-weight: @font-200; }
 .font-300 { font-weight: @font-300; }
@@ -27,34 +27,34 @@
 .font-800 { font-weight: @font-800; }
 .font-900 { font-weight: @font-900; }
 
-// Font Styles
+/* Font Styles */
 .font-normal { font-style: normal; }
 .font-italic { font-style: italic; }
 
-// Text Modifications
+/* Text Modifications */
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 
-// Text Alignments
+/* Text Alignments */
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
 
-// Positions
+/* Positions */
 .relative { position: relative; }
 .absolute { position: absolute; }
 .static { position: static; }
 .fixed { position: fixed; }
 
-// Display Types
+/* Display Types */
 .none { display: none; }
 .block { display: block; }
 .inline-block { display: inline-block; }
 .inline { display: inline; }
 
-// Flex Types
+/* Flex Types */
 .flex { display: flex; }
 .flex-row { flex-direction: row; }
 .flex-column { flex-direction: column; }
@@ -66,18 +66,18 @@
 .flex-wrap { flex-wrap: wrap; }
 .flex-nowrap { flex-wrap: nowrap; }
 
-// Floats
+/* Floats */
 .left { float: left; }
 .right { float: right; }
 
-// Alignments
+/* Alignments */
 .center-element {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
 
-// Hide only visually, but have it available for screenreaders: : h5bp.com/v
+/* Hide only visually, but have it available for screenreaders: : h5bp.com/v */
 .sr {
   border: 0;
   clip: rect(0 0 0 0);
@@ -89,7 +89,7 @@
   width: 1px;
 }
 
-// Lists
+/* Lists */
 .list-unstyled {
   list-style: none;
   margin: 0;
@@ -110,10 +110,10 @@
   }
 }
 
-// Images
+/* Images */
 .img-responsive { max-width: 100%; }
 
-// Image Positions
+/* Image Positions */
 .img-left {
   float: left;
   margin-right: 20px;
@@ -123,7 +123,7 @@
   margin-left: 20px;
 }
 
-// Grouped Fields
+/* Grouped Fields */
 .field-group {
   padding-top: .5em;
   padding-bottom: .5em;
@@ -134,7 +134,7 @@
 }
 .field { width: 100%; }
 
-// Disable Element
+/* Disable Element */
 .disabled {
   pointer-events: none;
   opacity: .5;
@@ -162,7 +162,7 @@
 
 // Animations
 .animate {
-  .animate(1s);
+  @mixin animate 1s;
 }
 .animate-infinite {
   -webkit-animation-iteration-count: infinite;

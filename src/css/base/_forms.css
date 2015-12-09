@@ -1,8 +1,8 @@
-// ==========================================================================
+/* ==========================================================================
 // Base – Forms
-// ==========================================================================
+========================================================================== */
 
-// Form, Fieldset and Legend
+/* Form, Fieldset and Legend */
 fieldset,
 legend {
   border: 0;
@@ -10,16 +10,16 @@ legend {
   padding: 0;
 }
 legend {
-  .font-size(@base-font-size + 2);
-  .line-height(@base-line-height + 2);
-  font-weight: @font-700;
+  @mixin font-size $base-font-size+2;
+  @mixin line-height $base-line-height+2;
+  font-weight: $font-700;
 }
 .form {
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-// All Form Elements
+/* All Form Elements */
 label,
 button,
 input,

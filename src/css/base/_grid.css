@@ -1,8 +1,8 @@
-// ==========================================================================
+/* ==========================================================================
 // Base – Mobile-First Grid
-// ==========================================================================
+========================================================================== */
 
-// Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
+/* Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clear:before, .clear:after { content: " "; display: table; } .clear:after { clear: both; }
 .row:before, .row:after { content: ""; display: table; } .row:after { clear: both; }
 
@@ -12,7 +12,7 @@
   margin-right: -15px;
 }
 
-// Mobile Container
+/* Mobile Container */
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -25,11 +25,9 @@
   margin-left: auto;
   margin-right: auto;
 }
-// Tablet Container
+/* Tablet Container */
 @media only screen and (min-width: $breakpoint-tablet) {
-  .container, .container-full {
-    width: $container-tablet;
-  }
+  .container, .container-full { width: $container-tablet; }
   .container-tablet {
     width: $container-tablet;
     padding-left: 15px;
@@ -45,11 +43,9 @@
     padding-right: 0;
   }
 }
-// Desktop Container
+/* Desktop Container */
 @media only screen and (min-width: $breakpoint-desktop) {
-  .container, .container-full {
-    width: $container-desktop;
-  }
+  .container, .container-full { width: $container-desktop; }
   .container-desktop {
     width: $container-desktop;
     padding-left: 15px;
@@ -65,11 +61,9 @@
     padding-right: 0;
   }
 }
-// HD Container
+/* HD Container */
 @media only screen and (min-width: $breakpoint-hd) {
-  .container, .container-full {
-    width: $container-hd;
-  }
+  .container, .container-full { width: $container-hd; }
   .container-hd {
     width: $container-hd;
     padding-left: 15px;
@@ -86,7 +80,7 @@
   }
 }
 
-// Mobile-first Grid Columns - Global Rules
+/* Mobile-first Grid Columns - Global Rules */
 .col-1,
 .col-2,
 .col-3,
@@ -105,32 +99,25 @@
   float: left;
 }
 
-// Mobile-first Grid
-$columns: 12;
-@for $i from 1 through $columns {
-  .col-#{$i} {
-    width: ($i / $columns) * 100%;
-  }
+/* Mobile-first Grid */
+@for $col from 1 to 12 {
+  .col-$col { width: $(col) / 12 * 100%; }
 }
 
-// Mobile Push Offsets
-@for $i from 1 through $columns - 1 {
-  .push-#{$i} {
-    left: ($i / $columns) * 100%;
-  }
+/* Mobile Push Offsets */
+@for $push from 1 to 11 {
+  .push-$push { left: $(push) / 12 * 100%; }
 }
 
-// Mobile Pull Offsets
-@for $i from 1 through $columns - 1 {
-  .pull-#{$i} {
-    left: -($i / $columns) * 100%;
-  }
+/* Mobile Pull Offsets */
+@for $pull from 1 to 11 {
+  .pull-$pull { left: -$(pull) / 12 * 100%; }
 }
 
-// Tablet Grid
+/* Tablet Grid */
 @media only screen and (min-width: $breakpoint-tablet) {
   
-  // Tablet Grid Columns - Global Rules
+  /* Tablet Grid Columns - Global Rules */
   .col-1-tablet,
   .col-2-tablet,
   .col-3-tablet,
@@ -149,33 +136,26 @@ $columns: 12;
     float: left;
   }
 
-  // Tablet Grid
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-#{$i}-tablet {
-      width: ($i / $columns) * 100%;
-    }
+  /* Tablet Grid */
+  @for $colTablet from 1 to 12 {
+    .col-$(colTablet)-tablet { width: $(colTablet) / 12 * 100%; }
   }
 
-  // Tablet Push Offsets
-  @for $i from 1 through $columns - 1 {
-    .push-#{$i}-tablet {
-      left: ($i / $columns) * 100%;
-    }
+  /* Tablet Push Offsets */
+  @for $pushTablet from 1 to 11 {
+    .push-$(pushTablet)-tablet { left: $(pushTablet) / 12 * 100%; }
   }
 
-  // Tablet Pull Offsets
-  @for $i from 1 through $columns - 1 {
-    .pull-#{$i}-tablet {
-      left: -($i / $columns) * 100%;
-    }
+  /* Tablet Pull Offsets */
+  @for $pullTablet from 1 to 11 {
+    .pull-$(pullTablet)-tablet { left: -$(pullTablet) / 12 * 100%; }
   }
 }
 
-// Desktop Grid
+/* Desktop Grid */
 @media only screen and (min-width: $breakpoint-desktop) {
   
-  // Desktop Grid Columns - Global Rules
+  /* Desktop Grid Columns - Global Rules */
   .col-1-desktop,
   .col-2-desktop,
   .col-3-desktop,
@@ -194,33 +174,26 @@ $columns: 12;
     float: left;
   }
 
-  // Desktop Grid
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-#{$i}-desktop {
-      width: ($i / $columns) * 100%;
-    }
+  /* Desktop Grid */
+  @for $col-desktop from 1 to 12 {
+    .col-$(colDesktop)-desktop { width: $(colDesktop) / 12 * 100%; }
   }
 
-  // Desktop Push Offsets
-  @for $i from 1 through $columns - 1 {
-    .push-#{$i}-desktop {
-      left: ($i / $columns) * 100%;
-    }
+  /* Desktop Push Offsets */
+  @for $pushDesktop from 1 to 11 {
+    .push-$(pushDesktop)-desktop { left: $(pushDesktop) / 12 * 100%; }
   }
 
-  // Desktop Pull Offsets
-  @for $i from 1 through $columns - 1 {
-    .pull-#{$i}-desktop {
-      left: -($i / $columns) * 100%;
-    }
+  /* Desktop Pull Offsets */
+  @for $pullDesktop from 1 to 11 {
+    .pull-$(pullDesktop)-desktop { left: -$(pullDesktop) / 12 * 100%; }
   }
 }
 
-// HD Grid
+/* HD Grid */
 @media only screen and (min-width: $breakpoint-hd) {
   
-  // HD Grid Columns - Global Rules
+  /* HD Grid Columns - Global Rules */
   .col-1-hd,
   .col-2-hd,
   .col-3-hd,
@@ -239,25 +212,18 @@ $columns: 12;
     float: left;
   }
 
-  // HD Grid
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-#{$i}-hd {
-      width: ($i / $columns) * 100%;
-    }
+  /* HD Grid */
+  @for $colHD from 1 to 12 {
+    .col-$(colHD)-hd { width: $(colHD) / 12 * 100%; }
   }
 
-  // HD Push Offsets
-  @for $i from 1 through $columns - 1 {
-    .push-#{$i}-hd {
-      left: ($i / $columns) * 100%;
-    }
+  /* HD Push Offsets */
+  @for $pushHD from 1 to 11 {
+    .push-$(pushHD)-hd { left: $(pushHD) / 12 * 100%; }
   }
 
-  // HD Pull Offsets
-  @for $i from 1 through $columns - 1 {
-    .pull-#{$i}-hd {
-      left: -($i / $columns) * 100%;
-    }
+  /* HD Pull Offsets */
+  @for $pullHD from 1 to 11 {
+    .pull-$(pullHD)-hd { left: -$(pullHD) / 12 * 100%; }
   }
 }

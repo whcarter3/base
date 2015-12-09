@@ -1,8 +1,8 @@
 // Base Gulp File
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    sass = require('gulp-sass'),
-    less = require('gulp-less'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
     path = require('path'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
@@ -12,47 +12,27 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     runSequence = require('run-sequence');
 
-// Task to compile SCSS
-gulp.task('sass', function () {
-  return gulp.src('./src/scss/style.scss')
-    .pipe(sass({
-      errLogToConsole: false,
-      paths: [ path.join(__dirname, 'scss', 'includes') ]
-    })
-    .on("error", notify.onError(function(error) {
-      return "Failed to Compile SCSS: " + error.message;
-    })))
-    .pipe(gulp.dest('./src/'))
-    .pipe(gulp.dest('./dist/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-    .pipe(notify("SCSS Compiled Successfully :)"));
-});
-
-// Task to compile LESS
-gulp.task('less', function () {
-  return gulp.src('./src/less/style.less')
-    .pipe(less({ paths: [ path.join(__dirname, 'less', 'includes') ]
-  })
+// Task to compile CSS
+gulp.task('css', function () {
+  return gulp.src('./src/css/style.css')
+  .pipe(postcss([
+      require('precss')(),
+      require('postcss-mixins'),
+      require('postcss-nesting')(),
+      require('postcss-inline-svg')()
+   ])
   .on('error', function(err) {
     this.emit('end');
   }))
   .on("error", notify.onError(function(error) {
-    return "Failed to Compile LESS: " + error.message;
+    return "Failed to Compile CSS: " + error.message;
   }))
   .pipe(gulp.dest('./src/'))
   .pipe(gulp.dest('./dist/'))
   .pipe(browserSync.reload({
     stream: true
   }))
-  .pipe(notify("LESS Compiled Successfully :)"));
-});
-
-// Task to move compiled CSS to `dist` folder
-gulp.task('movecss', function () {
-  return gulp.src('./src/style.css')
-    .pipe(gulp.dest('./dist/'));
+  .pipe(notify("CSS Compiled Successfully :)"));
 });
 
 // Task to Minify JS
@@ -93,8 +73,7 @@ gulp.task('inlinesource', function () {
 
 // Gulp Watch Task
 gulp.task('watch', ['browserSync'], function () {
-   gulp.watch('./src/scss/**/*', ['sass']),
-   gulp.watch('./src/less/**/*', ['less']);
+   gulp.watch('./src/css/**/*', ['css']);
    gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 
@@ -103,5 +82,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('movecss', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('css', 'imagemin', 'jsmin', 'inlinesource');
 });
