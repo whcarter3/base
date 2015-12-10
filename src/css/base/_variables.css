@@ -75,7 +75,7 @@
   --container-hd:                                  1120px;
 
   /* Responsive Breakpoints */
-  @custom-media --viewport-tablet only screen and (min-width: var(--container-tablet) + 20);
-  @custom-media --viewport-desktop only screen and (min-width: var(--container-desktop) + 20);
-  @custom-media --viewport-hd only screen and (min-width: var(--container-hd) + 20);
+  @custom-media --viewport-tablet only screen and (min-width: calc(var(--container-tablet) + 20));
+  @custom-media --viewport-desktop only screen and (min-width: calc(var(--container-desktop) + 20));
+  @custom-media --viewport-hd only screen and (min-width: calc(var(--container-hd) + 20));
 }

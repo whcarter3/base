@@ -4,7 +4,7 @@
 /* Font sizes (primary sizing in `rem` units with a fallback of `px`)
    Example usage .font-size(18); */
 @define-mixin font-size $size {
-  $remValue: resolve($size / 16);
+  $remValue: calc($size / 16);
   $pxValue: ($size);
   font-size: $(pxValue)px; 
   font-size: $(remValue)rem;
@@ -13,7 +13,7 @@
 /* Line height sizes (primary sizing in `rem` units with a fallback of `px`)
    Example usage .line-height(22); */
 @define-mixin line-height $size {
-  $remValue: resolve($size / 16);
+  $remValue: calc($size / 16);
   $pxValue: ($size);
   line-height: $(pxValue)px; 
   line-height: $(remValue)rem;

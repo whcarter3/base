@@ -2,7 +2,7 @@
 
   Base Stylesheet - http://getbase.org
   Author: Matthew Hartman - http://www.matthewhartman.com.au/
-  Version: 3.0.0 - Last Updated: December 1, 2015
+  Version: 3.0.0 - Last Updated: December 10, 2015
 
 ========================================================================== */
   
@@ -114,11 +114,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 16px;
   
-    font-size: resolve(16 / 16)rem;
+    font-size: 1rem;
   
     line-height: 22px;
   
-    line-height: resolve(22 / 16)rem;
+    line-height: 1.375rem;
   
     color: #585858;
   
@@ -165,11 +165,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 32px;
   
-    font-size: resolve(32 / 16)rem;
+    font-size: 2rem;
   
     line-height: 38px;
   
-    line-height: resolve(38 / 16)rem;
+    line-height: 2.375rem;
   
     margin-top: .7em;
   
@@ -184,11 +184,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 26px;
   
-    font-size: resolve(26 / 16)rem;
+    font-size: 1.625rem;
   
     line-height: 32px;
   
-    line-height: resolve(32 / 16)rem;
+    line-height: 2rem;
   
     margin-top: 1.4em;
   
@@ -203,11 +203,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 22px;
   
-    font-size: resolve(22 / 16)rem;
+    font-size: 1.375rem;
   
     line-height: 28px;
   
-    line-height: resolve(28 / 16)rem;
+    line-height: 1.75rem;
   
     margin-top: 1em;
   
@@ -222,11 +222,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 18px;
   
-    font-size: resolve(18 / 16)rem;
+    font-size: 1.125rem;
   
     line-height: 24px;
   
-    line-height: resolve(24 / 16)rem;
+    line-height: 1.5rem;
   
     margin-top: 1em;
   
@@ -241,11 +241,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 16px;
   
-    font-size: resolve(16 / 16)rem;
+    font-size: 1rem;
   
     line-height: 22px;
   
-    line-height: resolve(22 / 16)rem;
+    line-height: 1.375rem;
   
     margin-top: 1em;
   
@@ -260,11 +260,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 14px;
   
-    font-size: resolve(14 / 16)rem;
+    font-size: 0.875rem;
   
     line-height: 20px;
   
-    line-height: resolve(20 / 16)rem;
+    line-height: 1.25rem;
   
     margin-top: 1em;
   
@@ -430,11 +430,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 22px;
   
-    font-size: resolve(22 / 16)rem;
+    font-size: 1.375rem;
   
     line-height: 28px;
   
-    line-height: resolve(28 / 16)rem;
+    line-height: 1.75rem;
   
     margin-bottom: .4em;
 }
@@ -442,11 +442,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 16-3px;
   
-    font-size: resolve(16-3 / 16)rem;
+    font-size: 15.8125rem;
   
     line-height: 22-3px;
   
-    line-height: resolve(22-3 / 16)rem;
+    line-height: 21.8125rem;
   
     font-weight: 700;
   
@@ -459,9 +459,9 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
 ========================================================================== */
   caption {
   
-    font-size: 16px;
+    font-size: 18px;
   
-    font-size: resolve(16 / 16)rem;
+    font-size: 1.125rem;
   
     line-height: normal;
   
@@ -475,9 +475,9 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
 }
   table {
   
-    font-size: 16px;
+    font-size: 14px;
   
-    font-size: resolve(16 / 16)rem;
+    font-size: 0.875rem;
   
     border-collapse: collapse;
   
@@ -504,11 +504,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 13px;
   
-    font-size: resolve(13 / 16)rem;
+    font-size: 0.8125rem;
   
     line-height: 18px;
   
-    line-height: resolve(18 / 16)rem;
+    line-height: 1.125rem;
   
     word-wrap: break-word;
   
@@ -548,11 +548,11 @@ Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat); 
   
     font-size: 16+2px;
   
-    font-size: resolve(16+2 / 16)rem;
+    font-size: 16.125rem;
   
     line-height: 22+2px;
   
-    line-height: resolve(22+2 / 16)rem;
+    line-height: 22.125rem;
   
     font-weight: 700;
 }
@@ -894,111 +894,9 @@ button {
 
   /* Tablet Container */
 
-  @media only screen and (min-width: var(--container-tablet) + 20) {
-  
-    .container, .container-full {
-  
-        width: 720px;
-    }
-  
-    .container-tablet {
-  
-        width: 720px;
-  
-        padding-left: 15px;
-  
-        padding-right: 15px;
-  
-        margin-left: auto;
-  
-        margin-right: auto;
-    }
-  
-    .container-full-tablet {
-  
-        width: 720px;
-  
-        margin-left: auto;
-  
-        margin-right: auto;
-  
-        padding-left: 0;
-  
-        padding-right: 0;
-    }
-}
-
   /* Desktop Container */
 
-  @media only screen and (min-width: var(--container-desktop) + 20) {
-  
-    .container, .container-full {
-  
-        width: 960px;
-    }
-  
-    .container-desktop {
-  
-        width: 960px;
-  
-        padding-left: 15px;
-  
-        padding-right: 15px;
-  
-        margin-left: auto;
-  
-        margin-right: auto;
-    }
-  
-    .container-full-desktop {
-  
-        width: 960px;
-  
-        margin-left: auto;
-  
-        margin-right: auto;
-  
-        padding-left: 0;
-  
-        padding-right: 0;
-    }
-}
-
   /* HD Container */
-
-  @media only screen and (min-width: var(--container-hd) + 20) {
-  
-    .container, .container-full {
-  
-        width: 1120px;
-    }
-  
-    .container-hd {
-  
-        width: 1120px;
-  
-        padding-left: 15px;
-  
-        padding-right: 15px;
-  
-        margin-left: auto;
-  
-        margin-right: auto;
-    }
-  
-    .container-full-hd {
-  
-        width: 1120px;
-  
-        margin-left: auto;
-  
-        margin-right: auto;
-  
-        padding-left: 0;
-  
-        padding-right: 0;
-    }
-}
 
   /* Mobile-first Grid Columns - Global Rules */
 
@@ -1191,561 +1089,9 @@ button {
 
   /* Tablet Grid */
 
-  @media only screen and (min-width: var(--container-tablet) + 20) {/* Tablet Grid Columns - Global Rules */
-  
-    .col-1-tablet, .col-2-tablet, .col-3-tablet, .col-4-tablet, .col-5-tablet, .col-6-tablet, .col-7-tablet, .col-8-tablet, .col-9-tablet, .col-10-tablet, .col-11-tablet, .col-12-tablet {
-  
-        padding-left: 15px;
-  
-        padding-right: 15px;
-  
-        position: relative;
-  
-        float: left;
-    }/* Tablet Grid */
-  
-    .col-1-tablet {
-  
-        width: 1 / 12 * 100%;
-    }
-  
-    .col-2-tablet {
-  
-        width: 2 / 12 * 100%;
-    }
-  
-    .col-3-tablet {
-  
-        width: 3 / 12 * 100%;
-    }
-  
-    .col-4-tablet {
-  
-        width: 4 / 12 * 100%;
-    }
-  
-    .col-5-tablet {
-  
-        width: 5 / 12 * 100%;
-    }
-  
-    .col-6-tablet {
-  
-        width: 6 / 12 * 100%;
-    }
-  
-    .col-7-tablet {
-  
-        width: 7 / 12 * 100%;
-    }
-  
-    .col-8-tablet {
-  
-        width: 8 / 12 * 100%;
-    }
-  
-    .col-9-tablet {
-  
-        width: 9 / 12 * 100%;
-    }
-  
-    .col-10-tablet {
-  
-        width: 10 / 12 * 100%;
-    }
-  
-    .col-11-tablet {
-  
-        width: 11 / 12 * 100%;
-    }
-  
-    .col-12-tablet {
-  
-        width: 12 / 12 * 100%;
-    }/* Tablet Push Offsets */
-  
-    .push-1-tablet {
-  
-        left: 1 / 12 * 100%;
-    }
-  
-    .push-2-tablet {
-  
-        left: 2 / 12 * 100%;
-    }
-  
-    .push-3-tablet {
-  
-        left: 3 / 12 * 100%;
-    }
-  
-    .push-4-tablet {
-  
-        left: 4 / 12 * 100%;
-    }
-  
-    .push-5-tablet {
-  
-        left: 5 / 12 * 100%;
-    }
-  
-    .push-6-tablet {
-  
-        left: 6 / 12 * 100%;
-    }
-  
-    .push-7-tablet {
-  
-        left: 7 / 12 * 100%;
-    }
-  
-    .push-8-tablet {
-  
-        left: 8 / 12 * 100%;
-    }
-  
-    .push-9-tablet {
-  
-        left: 9 / 12 * 100%;
-    }
-  
-    .push-10-tablet {
-  
-        left: 10 / 12 * 100%;
-    }
-  
-    .push-11-tablet {
-  
-        left: 11 / 12 * 100%;
-    }/* Tablet Pull Offsets */
-  
-    .pull-1-tablet {
-  
-        left: -1 / 12 * 100%;
-    }
-  
-    .pull-2-tablet {
-  
-        left: -2 / 12 * 100%;
-    }
-  
-    .pull-3-tablet {
-  
-        left: -3 / 12 * 100%;
-    }
-  
-    .pull-4-tablet {
-  
-        left: -4 / 12 * 100%;
-    }
-  
-    .pull-5-tablet {
-  
-        left: -5 / 12 * 100%;
-    }
-  
-    .pull-6-tablet {
-  
-        left: -6 / 12 * 100%;
-    }
-  
-    .pull-7-tablet {
-  
-        left: -7 / 12 * 100%;
-    }
-  
-    .pull-8-tablet {
-  
-        left: -8 / 12 * 100%;
-    }
-  
-    .pull-9-tablet {
-  
-        left: -9 / 12 * 100%;
-    }
-  
-    .pull-10-tablet {
-  
-        left: -10 / 12 * 100%;
-    }
-  
-    .pull-11-tablet {
-  
-        left: -11 / 12 * 100%;
-    }
-}
-
   /* Desktop Grid */
 
-  @media only screen and (min-width: var(--container-desktop) + 20) {/* Desktop Grid Columns - Global Rules */
-  
-    .col-1-desktop, .col-2-desktop, .col-3-desktop, .col-4-desktop, .col-5-desktop, .col-6-desktop, .col-7-desktop, .col-8-desktop, .col-9-desktop, .col-10-desktop, .col-11-desktop, .col-12-desktop {
-  
-        padding-left: 15px;
-  
-        padding-right: 15px;
-  
-        position: relative;
-  
-        float: left;
-    }/* Desktop Grid */
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }
-  
-    .col-$(colDesktop)-desktop {
-  
-        width: $(colDesktop) / 12 * 100%;
-    }/* Desktop Push Offsets */
-  
-    .push-1-desktop {
-  
-        left: 1 / 12 * 100%;
-    }
-  
-    .push-2-desktop {
-  
-        left: 2 / 12 * 100%;
-    }
-  
-    .push-3-desktop {
-  
-        left: 3 / 12 * 100%;
-    }
-  
-    .push-4-desktop {
-  
-        left: 4 / 12 * 100%;
-    }
-  
-    .push-5-desktop {
-  
-        left: 5 / 12 * 100%;
-    }
-  
-    .push-6-desktop {
-  
-        left: 6 / 12 * 100%;
-    }
-  
-    .push-7-desktop {
-  
-        left: 7 / 12 * 100%;
-    }
-  
-    .push-8-desktop {
-  
-        left: 8 / 12 * 100%;
-    }
-  
-    .push-9-desktop {
-  
-        left: 9 / 12 * 100%;
-    }
-  
-    .push-10-desktop {
-  
-        left: 10 / 12 * 100%;
-    }
-  
-    .push-11-desktop {
-  
-        left: 11 / 12 * 100%;
-    }/* Desktop Pull Offsets */
-  
-    .pull-1-desktop {
-  
-        left: -1 / 12 * 100%;
-    }
-  
-    .pull-2-desktop {
-  
-        left: -2 / 12 * 100%;
-    }
-  
-    .pull-3-desktop {
-  
-        left: -3 / 12 * 100%;
-    }
-  
-    .pull-4-desktop {
-  
-        left: -4 / 12 * 100%;
-    }
-  
-    .pull-5-desktop {
-  
-        left: -5 / 12 * 100%;
-    }
-  
-    .pull-6-desktop {
-  
-        left: -6 / 12 * 100%;
-    }
-  
-    .pull-7-desktop {
-  
-        left: -7 / 12 * 100%;
-    }
-  
-    .pull-8-desktop {
-  
-        left: -8 / 12 * 100%;
-    }
-  
-    .pull-9-desktop {
-  
-        left: -9 / 12 * 100%;
-    }
-  
-    .pull-10-desktop {
-  
-        left: -10 / 12 * 100%;
-    }
-  
-    .pull-11-desktop {
-  
-        left: -11 / 12 * 100%;
-    }
-}
-
   /* HD Grid */
-
-  @media only screen and (min-width: var(--container-hd) + 20) {/* HD Grid Columns - Global Rules */
-  
-    .col-1-hd, .col-2-hd, .col-3-hd, .col-4-hd, .col-5-hd, .col-6-hd, .col-7-hd, .col-8-hd, .col-9-hd, .col-10-hd, .col-11-hd, .col-12-hd {
-  
-        padding-left: 15px;
-  
-        padding-right: 15px;
-  
-        position: relative;
-  
-        float: left;
-    }/* HD Grid */
-  
-    .col-1-hd {
-  
-        width: 1 / 12 * 100%;
-    }
-  
-    .col-2-hd {
-  
-        width: 2 / 12 * 100%;
-    }
-  
-    .col-3-hd {
-  
-        width: 3 / 12 * 100%;
-    }
-  
-    .col-4-hd {
-  
-        width: 4 / 12 * 100%;
-    }
-  
-    .col-5-hd {
-  
-        width: 5 / 12 * 100%;
-    }
-  
-    .col-6-hd {
-  
-        width: 6 / 12 * 100%;
-    }
-  
-    .col-7-hd {
-  
-        width: 7 / 12 * 100%;
-    }
-  
-    .col-8-hd {
-  
-        width: 8 / 12 * 100%;
-    }
-  
-    .col-9-hd {
-  
-        width: 9 / 12 * 100%;
-    }
-  
-    .col-10-hd {
-  
-        width: 10 / 12 * 100%;
-    }
-  
-    .col-11-hd {
-  
-        width: 11 / 12 * 100%;
-    }
-  
-    .col-12-hd {
-  
-        width: 12 / 12 * 100%;
-    }/* HD Push Offsets */
-  
-    .push-1-hd {
-  
-        left: 1 / 12 * 100%;
-    }
-  
-    .push-2-hd {
-  
-        left: 2 / 12 * 100%;
-    }
-  
-    .push-3-hd {
-  
-        left: 3 / 12 * 100%;
-    }
-  
-    .push-4-hd {
-  
-        left: 4 / 12 * 100%;
-    }
-  
-    .push-5-hd {
-  
-        left: 5 / 12 * 100%;
-    }
-  
-    .push-6-hd {
-  
-        left: 6 / 12 * 100%;
-    }
-  
-    .push-7-hd {
-  
-        left: 7 / 12 * 100%;
-    }
-  
-    .push-8-hd {
-  
-        left: 8 / 12 * 100%;
-    }
-  
-    .push-9-hd {
-  
-        left: 9 / 12 * 100%;
-    }
-  
-    .push-10-hd {
-  
-        left: 10 / 12 * 100%;
-    }
-  
-    .push-11-hd {
-  
-        left: 11 / 12 * 100%;
-    }/* HD Pull Offsets */
-  
-    .pull-1-hd {
-  
-        left: -1 / 12 * 100%;
-    }
-  
-    .pull-2-hd {
-  
-        left: -2 / 12 * 100%;
-    }
-  
-    .pull-3-hd {
-  
-        left: -3 / 12 * 100%;
-    }
-  
-    .pull-4-hd {
-  
-        left: -4 / 12 * 100%;
-    }
-  
-    .pull-5-hd {
-  
-        left: -5 / 12 * 100%;
-    }
-  
-    .pull-6-hd {
-  
-        left: -6 / 12 * 100%;
-    }
-  
-    .pull-7-hd {
-  
-        left: -7 / 12 * 100%;
-    }
-  
-    .pull-8-hd {
-  
-        left: -8 / 12 * 100%;
-    }
-  
-    .pull-9-hd {
-  
-        left: -9 / 12 * 100%;
-    }
-  
-    .pull-10-hd {
-  
-        left: -10 / 12 * 100%;
-    }
-  
-    .pull-11-hd {
-  
-        left: -11 / 12 * 100%;
-    }
-}
   /* @import "base/grid-non-responsive"; */
 
   /* Helpers */
@@ -2091,245 +1437,8 @@ button {
     animation-iteration-count: infinite;
 }
   /* Tablet Helpers */
-  @media only screen and (min-width: var(--container-tablet) + 20) {/* General Resets */
-  
-    .no-float-tablet {
-  
-        float: none;
-    }
-  
-    .no-padding-tablet {
-  
-        padding: 0;
-    }
-  
-    .no-margin-tablet {
-  
-        margin: 0;
-    }/* Display Types */
-  
-    .none-tablet {
-  
-        display: none;
-    }
-  
-    .block-tablet {
-  
-        display: block;
-    }
-  
-    .inline-block-tablet {
-  
-        display: inline-block;
-    }
-  
-    .inline-tablet {
-  
-        display: inline;
-    }/* Floats */
-  
-    .left-tablet {
-  
-        float: left;
-    }
-  
-    .right-tablet {
-  
-        float: right;
-    }/* Text Alignments */
-  
-    .text-left-tablet {
-  
-        text-align: left;
-    }
-  
-    .text-right-tablet {
-  
-        text-align: right;
-    }
-  
-    .text-center-tablet {
-  
-        text-align: center;
-    }
-  
-    .text-justify-tablet {
-  
-        text-align: justify;
-    }/* Grid Resets */
-  
-    .no-col-tablet {
-  
-        width: auto;
-  
-        float: none;
-    }
-  
-    .no-push-tablet, .no-pull-tablet {
-  
-        left: 0;
-    }
-}
   /* Desktop Helpers */
-  @media only screen and (min-width: var(--container-desktop) + 20) {/* General Resets */
-  
-    .no-float-desktop {
-  
-        float: none;
-    }
-  
-    .no-padding-desktop {
-  
-        padding: 0;
-    }
-  
-    .no-margin-desktop {
-  
-        margin: 0;
-    }/* Display Types */
-  
-    .none-desktop {
-  
-        display: none;
-    }
-  
-    .block-desktop {
-  
-        display: block;
-    }
-  
-    .inline-block-desktop {
-  
-        display: inline-block;
-    }
-  
-    .inline-desktop {
-  
-        display: inline;
-    }/* Floats */
-  
-    .left-desktop {
-  
-        float: left;
-    }
-  
-    .right-desktop {
-  
-        float: right;
-    }/* Text Alignments */
-  
-    .text-left-desktop {
-  
-        text-align: left;
-    }
-  
-    .text-right-desktop {
-  
-        text-align: right;
-    }
-  
-    .text-center-desktop {
-  
-        text-align: center;
-    }
-  
-    .text-justify-desktop {
-  
-        text-align: justify;
-    }/* Grid Resets */
-  
-    .no-col-desktop {
-  
-        width: auto;
-  
-        float: none;
-    }
-  
-    .no-push-desktop, .no-pull-desktop {
-  
-        left: 0;
-    }
-}
   /* HD Helpers */
-  @media only screen and (min-width: var(--container-hd) + 20) {/* General Resets */
-  
-    .no-float-hd {
-  
-        float: none;
-    }
-  
-    .no-padding-hd {
-  
-        padding: 0;
-    }
-  
-    .no-margin-hd {
-  
-        margin: 0;
-    }/* Display Types */
-  
-    .none-hd {
-  
-        display: none;
-    }
-  
-    .block-hd {
-  
-        display: block;
-    }
-  
-    .inline-block-hd {
-  
-        display: inline-block;
-    }
-  
-    .inline-hd {
-  
-        display: inline;
-    }/* Floats */
-  
-    .left-hd {
-  
-        float: left;
-    }
-  
-    .right-hd {
-  
-        float: right;
-    }/* Text Alignments */
-  
-    .text-left-hd {
-  
-        text-align: left;
-    }
-  
-    .text-right-hd {
-  
-        text-align: right;
-    }
-  
-    .text-center-hd {
-  
-        text-align: center;
-    }
-  
-    .text-justify-hd {
-  
-        text-align: justify;
-    }/* Grid Resets */
-  
-    .no-col-hd {
-  
-        width: auto;
-  
-        float: none;
-    }
-  
-    .no-push-hd, .no-pull-hd {
-  
-        left: 0;
-    }
-}
   /* Print Helpers */
   @media print {/* General Resets */
   
@@ -2406,25 +1515,10 @@ button {
 ========================================================================== */
 
   /* Tablet Styles */
-  @media only screen and (min-width: var(--container-tablet) + 20) {
-    /* ==========================================================================
-// Tablet Custom Styles
-========================================================================== */
-  }
 
   /* Desktop Styles */
-  @media only screen and (min-width: var(--container-desktop) + 20) {
-    /* ==========================================================================
-// Desktop Custom Styles
-========================================================================== */
-  }
 
   /* HD Styles */
-  @media only screen and (min-width: var(--container-hd) + 20) {
-    /* ==========================================================================
-// HD Custom Styles
-========================================================================== */
-  }
 
   /* Animations */
   // ==========================================================================
