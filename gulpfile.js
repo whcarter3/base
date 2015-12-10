@@ -2,7 +2,6 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
     path = require('path'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
@@ -16,6 +15,7 @@ var gulp = require('gulp'),
 gulp.task('css', function () {
   return gulp.src('./src/css/style.css')
   .pipe(postcss([
+      //require('autoprefixer'),
       require('precss')(),
       require('postcss-mixins'),
       require('postcss-nesting')(),

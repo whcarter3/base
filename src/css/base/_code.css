@@ -2,12 +2,12 @@
 // Base – Code
 ========================================================================== */
 code, kbd, pre, samp {
-  @mixin font-size $base-code-font-size;
-  @mixin line-height $base-code-line-height;
+  @mixin font-size var(--base-code-font-size);
+  @mixin line-height var(--base-code-line-height);
   word-wrap: break-word;
-  font-family: $base-code-font-family;
-  color: $base-code-color;
-  background-color: $base-code-background-color;
+  font-family: var(--base-code-font-family);
+  color: var(--base-code-color);
+  background-color: var(--base-code-background-color);
   font-weight: normal;
   padding: 5px;
   white-space: pre-wrap;
@@ -15,5 +15,5 @@ code, kbd, pre, samp {
 pre {
   padding: 10px;
   overflow: auto;
-  border: 1px solid $base-code-border-color;
+  border: 1px solid var(--base-code-border-color);
 }

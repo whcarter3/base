@@ -29,17 +29,17 @@
   @import "mobile-styles";
 
   /* Tablet Styles */
-  @media only screen and (min-width: @breakpoint-tablet) {
+  @media (--viewport-tablet) {
     @import "tablet-styles";
   }
 
   /* Desktop Styles */
-  @media only screen and (min-width: @breakpoint-desktop) {
+  @media (--viewport-desktop) {
     @import "desktop-styles";
   }
 
   /* HD Styles */
-  @media only screen and (min-width: @breakpoint-hd) {
+  @media (--viewport-hd) {
     @import "hd-styles";
   }
 

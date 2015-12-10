@@ -1,8 +1,8 @@
-// ==========================================================================
+/* ==========================================================================
 // Base – Non-Responsive Grid
-// ==========================================================================
+========================================================================== */
 
-// Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
+/* Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clear:before, .clear:after { content: " "; display: table; } .clear:after { clear: both; }
 .row:before, .row:after { content: ""; display: table; } .row:after { clear: both; }
 
@@ -12,13 +12,13 @@
   margin-right: -15px;
 }
 
-// Mobile Container
+/* Mobile Container */
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: @container-desktop;
+  width: var(--container-desktop);
 }
 .container-full {
   padding-left: 0;
@@ -27,7 +27,7 @@
   margin-right: auto;
 }
 
-// Grid Columns - Global Rules
+/* Grid Columns - Global Rules */
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   padding-left: 15px;
   padding-right: 15px;
@@ -35,29 +35,17 @@
   float: left;
 }
 
-// Grid
-.generate-grid (12);
-.generate-grid (@index) when (@index > 0) {
-  .generate-grid (@index - 1);
-  .col-@{index} {
-    width: @index / 12 * 100%;
-  }
+/* Grid */
+@for $col from 1 to 12 {
+  .col-$col { width: $(col) / 12 * 100%; }
 }
 
-// Push Offsets
-.generate-push-offsets (11);
-.generate-push-offsets (@index) when (@index > 0) {
-  .generate-push-offsets (@index - 1);
-  .push-@{index} {
-    left: @index / 12 * 100%;
-  }
+/* Push Offsets */
+@for $push from 1 to 11 {
+  .push-$push { left: $(push) / 12 * 100%; }
 }
 
-// Pull Offsets
-.generate-pull-offsets (11);
-.generate-pull-offsets (@index) when (@index > 0) {
-  .generate-pull-offsets (@index - 1);
-  .pull-@{index} {
-    left: -@index / 12 * 100%;
-  }
+/* Pull Offsets */
+@for $pull from 1 to 11 {
+  .pull-$pull { left: -$(pull) / 12 * 100%; }
 }

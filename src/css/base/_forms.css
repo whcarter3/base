@@ -10,9 +10,9 @@ legend {
   padding: 0;
 }
 legend {
-  @mixin font-size $base-font-size+2;
-  @mixin line-height $base-line-height+2;
-  font-weight: $font-700;
+  @mixin font-size var(--base-font-size)+2;
+  @mixin line-height var(--base-line-height)+2;
+  font-weight: var(--font-700);
 }
 .form {
   padding-top: 1em;

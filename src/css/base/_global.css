@@ -4,12 +4,12 @@
 
 /* Body */
 body {
-  font-family: $base-font-family;
-  @mixin font-size $base-font-size;
-  @mixin line-height $base-line-height;
-  color: $base-font-color;
-  font-weight: $base-font-weight;
-  background: $base-background-color;
+  font-family: var(--base-font-family);
+  @mixin font-size var(--base-font-size);
+  @mixin line-height var(--base-line-height);
+  color: var(--base-font-color);
+  font-weight: var(--base-font-weight);
+  background: var(--base-background-color);
 }
 
 /* Paragraph */
@@ -17,7 +17,7 @@ p { margin: 0 0 1em 0; }
 
 /* Links */
 a {
-  color: $base-link-color;
+  color: var(--base-link-color);
   background: transparent;
   text-decoration: underline;
   &:active,
@@ -29,63 +29,63 @@ a {
 
 /* Headings */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: $heading-font-family;
+  font-family: var(--heading-font-family);
   margin: 0;
 }
 h1, .h1 {
-  @mixin font-size $h1-font-size;
-  @mixin line-height $h1-line-height;
+  @mixin font-size var(--h1-font-size);
+  @mixin line-height var(--h1-line-height);
   margin-top: .7em;
   margin-bottom: .5em;
-  color: $h1-color;
-  font-weight: $h1-font-weight;
+  color: var(--h1-color);
+  font-weight: var(--h1-font-weight);
 }
 h2, .h2 {
-  @mixin font-size $h2-font-size;
-  @mixin line-height $h2-line-height;
+  @mixin font-size var(--h2-font-size);
+  @mixin line-height var(--h2-line-height);
   margin-top: 1.4em;
   margin-bottom: .2em;
-  color: $h2-color;
-  font-weight: $h2-font-weight;
+  color: var(--h2-color);
+  font-weight: var(--h2-font-weight);
 }
 h3, .h3 {
-  @mixin font-size $h3-font-size;
-  @mixin line-height $h3-line-height;
+  @mixin font-size var(--h3-font-size);
+  @mixin line-height var(--h3-line-height);
   margin-top: 1em;
   margin-bottom: .2em;
-  color: $h3-color;
-  font-weight: $h3-font-weight;
+  color: var(--h3-color);
+  font-weight: var(--h3-font-weight);
 }
 h4, .h4 {
-  @mixin font-size $h4-font-size;
-  @mixin line-height $h4-line-height;
+  @mixin font-size var(--h4-font-size);
+  @mixin line-height var(--h4-line-height);
   margin-top: 1em;
   margin-bottom: .2em;
-  color: $h4-color;
-  font-weight: $h4-font-weight;
+  color: var(--h4-color);
+  font-weight: var(--h4-font-weight);
 }
 h5, .h5 {
-  @mixin font-size $h5-font-size;
-  @mixin line-height $h5-line-height;
+  @mixin font-size var(--h5-font-size);
+  @mixin line-height var(--h5-line-height);
   margin-top: 1em;
   margin-bottom: .1em;
-  color: $h5-color;
-  font-weight: $h5-font-weight;
+  color: var(--h5-color);
+  font-weight: var(--h5-font-weight);
 }
 h6, .h6 {
-  @mixin font-size $h6-font-size;
-  @mixin line-height $h6-line-height;
+  @mixin font-size var(--h6-font-size);
+  @mixin line-height var(--h6-line-height);
   margin-top: 1em;
   margin-bottom: .1em;
-  color: $h6-color;
-  font-weight: $h6-font-weight;
+  color: var(--h6-color);
+  font-weight: var(--h6-font-weight);
 }
 
 /* Bold and Italics */
 b,
 strong,
 .strong {
-  font-weight: $font-700;
+  font-weight: var(--font-700);
 }
 em,
 .em {

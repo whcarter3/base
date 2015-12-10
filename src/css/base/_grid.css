@@ -26,17 +26,17 @@
   margin-right: auto;
 }
 /* Tablet Container */
-@media only screen and (min-width: $breakpoint-tablet) {
-  .container, .container-full { width: $container-tablet; }
+@media (--viewport-tablet) {
+  .container, .container-full { width: var(--container-tablet); }
   .container-tablet {
-    width: $container-tablet;
+    width: var(--container-tablet);
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
   .container-full-tablet {
-    width: $container-tablet;
+    width: var(--container-tablet);
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
@@ -44,17 +44,17 @@
   }
 }
 /* Desktop Container */
-@media only screen and (min-width: $breakpoint-desktop) {
-  .container, .container-full { width: $container-desktop; }
+@media (--viewport-desktop) {
+  .container, .container-full { width: var(--container-desktop); }
   .container-desktop {
-    width: $container-desktop;
+    width: var(--container-desktop);
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
   .container-full-desktop {
-    width: $container-desktop;
+    width: var(--container-desktop);
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
@@ -62,17 +62,17 @@
   }
 }
 /* HD Container */
-@media only screen and (min-width: $breakpoint-hd) {
-  .container, .container-full { width: $container-hd; }
+@media (--viewport-hd) {
+  .container, .container-full { width: var(--container-hd); }
   .container-hd {
-    width: $container-hd;
+    width: var(--container-hd);
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
   .container-full-hd {
-    width: $container-hd;
+    width: var(--container-hd);
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
@@ -115,7 +115,7 @@
 }
 
 /* Tablet Grid */
-@media only screen and (min-width: $breakpoint-tablet) {
+@media (--viewport-tablet) {
   
   /* Tablet Grid Columns - Global Rules */
   .col-1-tablet,
@@ -153,7 +153,7 @@
 }
 
 /* Desktop Grid */
-@media only screen and (min-width: $breakpoint-desktop) {
+@media (--viewport-desktop) {
   
   /* Desktop Grid Columns - Global Rules */
   .col-1-desktop,
@@ -191,7 +191,7 @@
 }
 
 /* HD Grid */
-@media only screen and (min-width: $breakpoint-hd) {
+@media (--viewport-hd) {
   
   /* HD Grid Columns - Global Rules */
   .col-1-hd,

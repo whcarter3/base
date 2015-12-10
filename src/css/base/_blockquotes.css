@@ -3,21 +3,21 @@
 ========================================================================== */
 blockquote,
 .blockquote {
-  font-family: $base-blockquote-font-family;
-  font-weight: $base-font-weight;
-  color: $base-blockquote-color;
+  font-family: var(--base-blockquote-font-family);
+  font-weight: var(--base-font-weight);
+  color: var(--base-blockquote-color);
   font-style: italic;
   margin: 3em 0;
   p {
-    @mixin font-size $base-blockquote-font-size;
-    @mixin line-height $base-blockquote-line-height;
+    @mixin font-size var(--base-blockquote-font-size);
+    @mixin line-height var(--base-blockquote-line-height);
     margin-bottom: .4em;
   }
   cite {
-    @mixin font-size $base-font-size-3;
-    @mixin line-height $base-line-height-3;
-    font-weight: $font-700;
+    @mixin font-size var(--base-font-size)-3;
+    @mixin line-height var(--base-line-height)-3;
+    font-weight: var(--font-700);
     font-style: normal;
-    color: $base-blockquote-cite-color;
+    color: var(--base-blockquote-cite-color);
   }
 }

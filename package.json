@@ -28,7 +28,7 @@
     "tests"
   ],
   "devDependencies": {
-    "autoprefixer": "*",
+    "autoprefixer": "^6.0.0",
     "browser-sync": "^2.9.6",
     "gulp": "^3.8.10",
     "gulp-cache": "^0.3.0",
