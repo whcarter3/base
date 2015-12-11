@@ -5,8 +5,8 @@
 /* Body */
 body {
   font-family: var(--base-font-family);
-  @mixin font-size var(--base-font-size);
-  @mixin line-height var(--base-line-height);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
   color: var(--base-font-color);
   font-weight: var(--base-font-weight);
   background: var(--base-background-color);
@@ -20,11 +20,11 @@ a {
   color: var(--base-link-color);
   background: transparent;
   text-decoration: underline;
-  &:active,
-  &:hover {
-    outline: 0;
-    text-decoration: none;
-  }
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
 }
 
 /* Headings */
@@ -33,48 +33,48 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
 }
 h1, .h1 {
-  @mixin font-size var(--h1-font-size);
-  @mixin line-height var(--h1-line-height);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
   margin-top: .7em;
   margin-bottom: .5em;
   color: var(--h1-color);
   font-weight: var(--h1-font-weight);
 }
 h2, .h2 {
-  @mixin font-size var(--h2-font-size);
-  @mixin line-height var(--h2-line-height);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
   margin-top: 1.4em;
   margin-bottom: .2em;
   color: var(--h2-color);
   font-weight: var(--h2-font-weight);
 }
 h3, .h3 {
-  @mixin font-size var(--h3-font-size);
-  @mixin line-height var(--h3-line-height);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
   margin-top: 1em;
   margin-bottom: .2em;
   color: var(--h3-color);
   font-weight: var(--h3-font-weight);
 }
 h4, .h4 {
-  @mixin font-size var(--h4-font-size);
-  @mixin line-height var(--h4-line-height);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
   margin-top: 1em;
   margin-bottom: .2em;
   color: var(--h4-color);
   font-weight: var(--h4-font-weight);
 }
 h5, .h5 {
-  @mixin font-size var(--h5-font-size);
-  @mixin line-height var(--h5-line-height);
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
   margin-top: 1em;
   margin-bottom: .1em;
   color: var(--h5-color);
   font-weight: var(--h5-font-weight);
 }
 h6, .h6 {
-  @mixin font-size var(--h6-font-size);
-  @mixin line-height var(--h6-line-height);
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
   margin-top: 1em;
   margin-bottom: .1em;
   color: var(--h6-color);
@@ -82,15 +82,8 @@ h6, .h6 {
 }
 
 /* Bold and Italics */
-b,
-strong,
-.strong {
-  font-weight: var(--font-700);
-}
-em,
-.em {
-  font-style: italic;
-}
+b, strong, .strong { font-weight: var(--font-700); }
+em, .em { font-style: italic; }
 
 /* Abbreviation */
 abbr[title], .abbr[title] { border-bottom: 1px dotted; }
@@ -130,7 +123,6 @@ figure { margin: 1em 40px; }
 /* Horizontal Rules */
 hr,
 .hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 1px;
   background: #eee;

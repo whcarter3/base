@@ -10,8 +10,8 @@ legend {
   padding: 0;
 }
 legend {
-  @mixin font-size var(--base-font-size)+2;
-  @mixin line-height var(--base-line-height)+2;
+  font-size: calc(var(--base-font-size) + 2);
+  line-height: calc(var(--base-line-height) + 2);
   font-weight: var(--font-700);
 }
 .form {
@@ -31,7 +31,7 @@ textarea {
   margin: 0;
 }
 
-// Inputs
+/* Inputs */
 input { line-height: normal; }
 
 input[type="text"],
@@ -79,14 +79,14 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-// Text Area
+/* Text Area */
 textarea {
   background-color: #fff;
   border: 1px solid #ccc;
   overflow: auto;
 }
 
-// Select
+/* Select */
 select {
   text-transform: none;
   height: 36px;
@@ -94,9 +94,9 @@ select {
   background-color: #fff;
   border: 1px solid #ccc;
 }
-optgroup { font-weight: @font-700; }
+optgroup { font-weight: var(--font-700); }
 
-// Buttons
+/* Buttons */
 button {
   overflow: visible;
   text-transform: none;
@@ -114,8 +114,8 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-// Placeholder Colour
-::-webkit-input-placeholder { color: @base-placeholder-color; }
-:-moz-placeholder { color: @base-placeholder-color; }
-::-moz-placeholder { color: @base-placeholder-color; }
-:-ms-input-placeholder { color: @base-placeholder-color; }
+/* Placeholder Colour */
+::-webkit-input-placeholder { color: var(--base-placeholder-color); }
+:-moz-placeholder { color: var(--base-placeholder-color); }
+::-moz-placeholder { color: var(--base-placeholder-color); }
+:-ms-input-placeholder { color: var(--base-placeholder-color); }

@@ -1,7 +1,7 @@
 // Base Gulp File
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    postcss = require('gulp-postcss'),
+    cssnext = require('gulp-cssnext'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
     browserSync = require('browser-sync'),
@@ -10,20 +10,12 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     runSequence = require('run-sequence');
 
-    // Array to store PostCSS plugins
-    var processors = [
-      require('precss'),
-      require('postcss-mixins'),
-      require('postcss-calc'),
-      require('postcss-custom-media'),
-      require('postcss-nesting'),
-      require('postcss-inline-svg')
-    ];
-
 // Task to compile CSS
 gulp.task('css', function () {
   return gulp.src('./src/css/style.css')
-  .pipe(postcss(processors)
+  .pipe(cssnext({
+    compress: false
+  })
   .on('error', function(err) {
     this.emit('end');
   }))

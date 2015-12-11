@@ -9,9 +9,6 @@
 .no-background { background: transparent; }
 .no-border { border: 0; }
 .no-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   cursor: default;
 }
@@ -94,20 +91,20 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  li {
-    margin: 0;
-    padding: 0;
-  }
+}
+.list-unstyled li {
+  margin: 0;
+  padding: 0;
 }
 .list-inline {
   list-style: none;
   margin: 0;
   padding: 0;
-  li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
+}
+.list-inline li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
 /* Images */
@@ -128,10 +125,8 @@
   padding-top: .5em;
   padding-bottom: .5em;
   overflow: hidden;
-  label {
-    padding-top: 8px;
-  }
 }
+.field-group label { padding-top: 8px; }
 .field { width: 100%; }
 
 /* Disable Element */
@@ -147,23 +142,24 @@
   position: relative;
   margin-top: .5em;
   margin-bottom: .5em;
-  label {
-    padding-left: 20px;
-    padding-top: 0;
-    display: inline-block;
-  }
-  input[type="checkbox"],
-  input[type="radio"] {
-    position: absolute;
-    top: 4px;
-    left: 0;
-  }
+}
+.checkbox label,
+.radio label {
+  padding-left: 20px;
+  padding-top: 0;
+  display: inline-block;
+}
+.checkbox input[type="checkbox"],
+.radio input[type="checkbox"],
+.checkbox input[type="radio"],
+.radio input[type="radio"] {
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
 
 /* Animations */
-.animate {
-  @mixin animate 1s;
-}
+.animate { animation-duration: 1s; }
 .animate-infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;

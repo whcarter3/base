@@ -2,8 +2,8 @@
 // Base – Code
 ========================================================================== */
 code, kbd, pre, samp {
-  @mixin font-size var(--base-code-font-size);
-  @mixin line-height var(--base-code-line-height);
+  font-size: var(--base-code-font-size);
+  line-height: var(--base-code-line-height);
   word-wrap: break-word;
   font-family: var(--base-code-font-family);
   color: var(--base-code-color);

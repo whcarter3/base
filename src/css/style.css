@@ -2,51 +2,50 @@
 
   Base Stylesheet - http://getbase.org
   Author: Matthew Hartman - http://www.matthewhartman.com.au/
-  Version: 3.0.0 - Last Updated: December 10, 2015
+  Version: 3.0.0 - Last Updated: December 11, 2015
 
 ========================================================================== */
   
-  @import "base/variables";
+  @import "base/_variables";
 
-  @import "base/mixins";
-  @import "base/resets";
+  @import "base/_resets";
 
-  @import "base/global";
-  @import "base/lists";
-  @import "base/blockquotes";
-  @import "base/tables";
-  @import "base/code";
-  @import "base/forms";
+  @import "base/_global";
+  @import "base/_lists";
+  @import "base/_blockquotes";
+  @import "base/_tables";
+  @import "base/_code";
+  @import "base/_forms";
   
-  @import "base/assets";
+  @import "base/_assets";
 
-  @import "base/grid";
-  /* @import "base/grid-non-responsive"; */
+  @import "base/_grid";
+  /* @import "base/_grid-non-responsive"; */
 
   /* Helpers */
-  @import "base/helpers";
+  @import "base/_helpers";
 
-  @import "mobile-styles";
+  @import "_mobile-styles";
 
   /* Tablet Styles */
   @media (--viewport-tablet) {
-    @import "tablet-styles";
+    @import "_tablet-styles";
   }
 
   /* Desktop Styles */
   @media (--viewport-desktop) {
-    @import "desktop-styles";
+    @import "_desktop-styles";
   }
 
   /* HD Styles */
   @media (--viewport-hd) {
-    @import "hd-styles";
+    @import "_hd-styles";
   }
 
   /* Animations */
-  @import "base/animations";
+  @import "base/_animations";
 
   /* Print Styles */
   @media print {
-    @import "base/print";
+    @import "base/_print";
   }

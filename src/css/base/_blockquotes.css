@@ -8,16 +8,18 @@ blockquote,
   color: var(--base-blockquote-color);
   font-style: italic;
   margin: 3em 0;
-  p {
-    @mixin font-size var(--base-blockquote-font-size);
-    @mixin line-height var(--base-blockquote-line-height);
-    margin-bottom: .4em;
-  }
-  cite {
-    @mixin font-size var(--base-font-size)-3;
-    @mixin line-height var(--base-line-height)-3;
-    font-weight: var(--font-700);
-    font-style: normal;
-    color: var(--base-blockquote-cite-color);
-  }
+}
+blockquote p,
+.blockquote p {
+  font-size: var(--base-blockquote-font-size);
+  line-height: var(--base-blockquote-line-height);
+  margin-bottom: .4em;
+}
+blockquote cite,
+.blockquote cite {
+  font-size: var(--base-font-size)-3;
+  line-height: var(--base-line-height)-3;
+  font-weight: var(--font-700);
+  font-style: normal;
+  color: var(--base-blockquote-cite-color);
 }
