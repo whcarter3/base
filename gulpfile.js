@@ -1,33 +1,39 @@
 // Base Gulp File
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    cssnext = require('gulp-cssnext'),
-    notify = require('gulp-notify'),
-    inlinesource = require('gulp-inline-source'),
-    browserSync = require('browser-sync'),
-    imagemin = require('gulp-imagemin'),
-    cache = require('gulp-cache'),
     uglify = require('gulp-uglify'),
-    runSequence = require('run-sequence');
+    notify = require('gulp-notify'),
+    cache = require('gulp-cache'),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload;
 
-// Task to compile CSS
-gulp.task('css', function () {
+// PostCSS and Plugins 
+var postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    cssnext = require('gulp-cssnext'),
+    pixrem = require('gulp-pixrem');
+
+gulp.task('css', function(){
+  var processors = [
+    pixrem,
+    cssnext,
+    autoprefixer({browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']})
+  ];
   return gulp.src('./src/css/style.css')
-  .pipe(cssnext({
-    compress: false
-  })
-  .on('error', function(err) {
-    this.emit('end');
-  }))
-  .on("error", notify.onError(function(error) {
-    return "Failed to Compile CSS: " + error.message;
-  }))
-  .pipe(gulp.dest('./src/'))
-  .pipe(gulp.dest('./dist/'))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
-  .pipe(notify("CSS Compiled Successfully :)"));
+    .pipe(cssnext({compress: false }))
+    .pipe(postcss(processors))
+    .on('error', function(err) {
+      this.emit('end');
+    })
+    .on("error", notify.onError(function(error) {
+      return "Failed to Compile CSS: " + error.message;
+    }))
+    .pipe(gulp.dest('./src'))
+    .pipe(gulp.dest('./dist'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+    .pipe(notify("CSS Compiled Successfully :)"));
 });
 
 // Task to Minify JS

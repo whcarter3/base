@@ -93,8 +93,8 @@
 .col-10,
 .col-11,
 .col-12 {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: var(--grid-gutter);
+  padding-right: var(--grid-gutter);
   position: relative;
   float: left;
 }
@@ -155,8 +155,8 @@
   .col-10-tablet,
   .col-11-tablet,
   .col-12-tablet {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: var(--grid-gutter-tablet);
+    padding-right: var(--grid-gutter-tablet);
     position: relative;
     float: left;
   }
@@ -218,8 +218,8 @@
   .col-10-desktop,
   .col-11-desktop,
   .col-12-desktop {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: var(--grid-gutter-desktop);
+    padding-right: var(--grid-gutter-desktop);
     position: relative;
     float: left;
   }
@@ -281,8 +281,8 @@
   .col-10-hd,
   .col-11-hd,
   .col-12-hd {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: var(--grid-gutter-hd);
+    padding-right: var(--grid-gutter-hd);
     position: relative;
     float: left;
   }

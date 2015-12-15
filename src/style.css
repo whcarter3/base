@@ -25,6 +25,8 @@
 
   /* Grid Containers */
 
+  /* Grid Gutters */
+
   /* Responsive Breakpoints */
 }
 
@@ -33,7 +35,7 @@
 ========================================================================== */
 
 /* Border Box */
-*, *:before, *:after { box-sizing: border-box; }
+*, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* HTML Font / Text Size Resets */
 html { font-size: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -181,7 +183,8 @@ figure { margin: 1em 40px; }
 /* Horizontal Rules */
 hr,
 .hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 1px;
   background: #eee;
   border: 0;
@@ -341,7 +344,8 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -351,7 +355,8 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -1392,7 +1397,8 @@ input::-moz-focus-inner {
 *:after {
   background: transparent;
   color: #000;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   text-shadow: none;
 }
 

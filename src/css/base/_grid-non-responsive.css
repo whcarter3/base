@@ -29,8 +29,8 @@
 
 /* Grid Columns - Global Rules */
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: var(--grid-gutter);
+  padding-right: var(--grid-gutter);
   position: relative;
   float: left;
 }

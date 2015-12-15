@@ -74,6 +74,12 @@
   --container-desktop:                             960px;
   --container-hd:                                  1120px;
 
+  /* Grid Gutters */
+  --grid-gutter:                                   15px;
+  --grid-gutter-tablet:                            15px;
+  --grid-gutter-desktop:                           15px;
+  --grid-gutter-hd:                                15px;
+
   /* Responsive Breakpoints */
   @custom-media --viewport-tablet only screen and (min-width: 740px);
   @custom-media --viewport-desktop only screen and (min-width: 980px);
