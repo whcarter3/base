@@ -8,8 +8,8 @@
 
 .row {
   position: relative;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -var(--grid-gutter);
+  margin-right: -var(--grid-gutter);
 }
 
 /* Mobile Container */
