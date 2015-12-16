@@ -3,9 +3,11 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     uglify = require('gulp-uglify'),
     notify = require('gulp-notify'),
+    imagemin = require('gulp-imagemin'),
+    inlinesource = require('gulp-inline-source'),
     cache = require('gulp-cache'),
     browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+    runSequence = require('run-sequence');
 
 // PostCSS and Plugins 
 var postcss = require('gulp-postcss'),
@@ -17,7 +19,7 @@ gulp.task('css', function(){
   var processors = [
     pixrem,
     cssnext,
-    autoprefixer({browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']})
+    autoprefixer({browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'ios 6', 'android 4']})
   ];
   return gulp.src('./src/css/style.css')
     .pipe(cssnext({compress: false }))
