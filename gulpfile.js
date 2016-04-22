@@ -2,7 +2,6 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
-    less = require('gulp-less'),
     path = require('path'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
@@ -30,32 +29,6 @@ gulp.task('sass', function () {
       stream: true
     }))
     .pipe(notify("SCSS Compiled Successfully :)"));
-});
-
-// Task to compile LESS
-gulp.task('less', function () {
-  return gulp.src('./src/less/style.less')
-    .pipe(less({ paths: [ path.join(__dirname, 'less', 'includes') ]
-  })
-  .on('error', function() {
-    this.emit('end');
-  }))
-  .on("error", notify.onError(function(error) {
-    return "Failed to Compile LESS: " + error.message;
-  }))
-  .pipe(autoprefixer())
-  .pipe(gulp.dest('./src/'))
-  .pipe(gulp.dest('./dist/'))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
-  .pipe(notify("LESS Compiled Successfully :)"));
-});
-
-// Task to move compiled CSS to `dist` folder
-gulp.task('movecss', function () {
-  return gulp.src('./src/style.css')
-    .pipe(gulp.dest('./dist/'));
 });
 
 // Task to Minify JS
@@ -106,5 +79,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('movecss', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('sass', 'imagemin', 'jsmin', 'inlinesource');
 });
