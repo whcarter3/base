@@ -6,38 +6,38 @@ Lightweight and minimal code. Spend less time overriding styles and focus more t
 ## Base 3 Dev Tasks
 
 ### HTML
-- [] Clean up index.html file
-- [] Add basic styleguide
+- [ ] Clean up index.html file
+- [ ] Add basic styleguide
 
 ### JS
-- [] Update jQuery to latest
+- [ ] Update jQuery to latest
 
 ### Images
-- [] Update favicons
+- [ ] Update favicons
 
 ### SCSS/LESS/CSS
-- [] Refactor resets file using normalize v4
-- [] Add more variables for controlling form elements
-- [] Update typography and headings
-- [] Update grid column naming (-m, -l, -xl)
-- [] Add better, reusable layout helpers
-- [] Update default styling for tables
-- [] Clean up and update mixins
-- [] Clean up overall style.scss/style.less
-- [] Update print layout helpers
-- [] Separate LESS version into another branch and make SCSS default
+- [ ] Refactor resets file using normalize v4
+- [ ] Add more variables for controlling form elements
+- [ ] Update typography and headings
+- [ ] Update grid column naming (-m, -l, -xl)
+- [ ] Add better, reusable layout helpers
+- [ ] Update default styling for tables
+- [ ] Clean up and update mixins
+- [ ] Clean up overall style.scss/style.less
+- [ ] Update print layout helpers
+- [ ] Separate LESS version into another branch and make SCSS default
 
 ### Build Tool
-- [] Add new plugin to manage fill colours and base64 encode SVGs
+- [ ] Add new plugin to manage fill colours and base64 encode SVGs
 
 ### Documentation
-- [] Update docs website
-- [] Update documentation to be in line with V3
+- [ ] Update docs website
+- [ ] Update documentation to be in line with V3
 
 ### Miscellaneous
-- [] Update travis.yml to use a more stable version of Node
-- [] Update readme.markdown
-- [] Update changelog
+- [ ] Update travis.yml to use a more stable version of Node
+- [ ] Update readme.markdown
+- [ ] Update changelog
 
 * * *
 
