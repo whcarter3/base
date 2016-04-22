@@ -16,15 +16,15 @@ Lightweight and minimal code. Spend less time overriding styles and focus more t
 - [ ] Update favicons
 
 ### SCSS/LESS/CSS
-- [ ] Refactor resets file using normalize v4
-- [ ] Add more variables for controlling form elements
-- [ ] Update typography and headings
-- [ ] Update grid column naming (-m, -l, -xl)
-- [ ] Add better, reusable layout helpers
+- [x] Refactor resets file using normalize v4
+- [x] Add more variables for controlling form elements
+- [x] Update typography and headings
+- [x] Update grid column naming (-m, -l, -xl)
+- [x] Add better, reusable layout helpers
 - [ ] Update default styling for tables
 - [ ] Clean up and update mixins
-- [ ] Clean up overall style.scss/style.less
-- [ ] Update print layout helpers
+- [x] Clean up overall style.scss/style.less
+- [x] Update print layout helpers
 - [ ] Separate LESS version into another branch and make SCSS default
 
 ### Build Tool

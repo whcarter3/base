@@ -57,7 +57,7 @@ $base-blockquote-color:                         #424242 !default;
 $base-blockquote-cite-color:                    #777 !default;
 
 // Code
-$base-code-font-family:                         'courier new', monospace, serif !default;
+$base-code-font-family:                         monospace, monospace !default;
 $base-code-font-size:                           13 !default;
 $base-code-line-height:                         18 !default;
 $base-code-color:                               #272727 !default;
@@ -65,24 +65,27 @@ $base-code-background-color:                    #f1f1f1 !default;
 $base-code-border-color:                        #d7d7d7 !default;
 
 // Forms
-$base-placeholder-color:                        #999 !default;
-$base-field-color:                              #222 !default;
-$base-field-border-color:                       #ccc !default;
-$base-field-border-color-focus:                 #f7c723 !default;
+$base-input-height:                             36px !default;
+$base-input-placeholder-color:                  #999 !default;
+$base-input-color:                              #222 !default;
+$base-input-background-color:                   #fff !default;
+$base-input-background-color-focus:             #fff !default;
+$base-input-border-color:                       #ccc !default;
+$base-input-border-color-focus:                 #f7c723 !default;
 
 // Grid Containers
-$container-mobile:                              100% !default;
-$container-tablet:                              720px !default;
-$container-desktop:                             960px !default;
-$container-hd:                                  1120px !default;
+$container-s:                                   100% !default;
+$container-m:                                   720px !default;
+$container-l:                                   960px !default;
+$container-xl:                                  1120px !default;
 
 // Grid Gutters
 $grid-gutter:                                   15px !default;
-$grid-gutter-tablet:                            15px !default;
-$grid-gutter-desktop:                           15px !default;
-$grid-gutter-hd:                                15px !default;
+$grid-gutter-m:                                 15px !default;
+$grid-gutter-l:                                 15px !default;
+$grid-gutter-xl:                                15px !default;
 
 // Responsive Breakpoints
-$breakpoint-tablet:                             ($container-tablet + 20) !default;
-$breakpoint-desktop:                            ($container-desktop + 20) !default;
-$breakpoint-hd:                                 ($container-hd + 20) !default;
+$breakpoint-m:                                  ($container-m + 20) !default;
+$breakpoint-l:                                  ($container-l + 20) !default;
+$breakpoint-xl:                                 ($container-xl + 20) !default;
