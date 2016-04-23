@@ -1,6 +1,19 @@
 # Base 2 Change Log
 
 
+## [3.0.0] - 2016-04-23
+### Base V3.0.0
+- Refactored base to use normalize v4.1.1
+- Added more variables for general hover and focus states, form elements and more
+- Updated default typography and headings
+- Added new font-size helpers (.fs-1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6) which are based off the h1-h6 font sizes respectively
+- Added styleguide
+- Added new grid columns (1-2, 1-3, 2-3, 1-4, 3-4, 1-5, 2-5, 3-5, 4-5) for all devices
+- Minor cleanup in gulpfile.js
+- Version bump package.json and bower.json
+- Version bump style.less/style.scss
+
+
 ## [2.8.3] - 2016-03-23
 ### Base V2.8.3
 - Refactored custom select to be more accessible (focus state)

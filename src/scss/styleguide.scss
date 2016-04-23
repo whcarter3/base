@@ -1,0 +1,24 @@
+/* ==========================================================================
+
+// Base Styleguide - http://getbase.org
+// Author: Matthew Hartman - http://www.matthewhartman.com.au/
+// Version: 3.0.0 - Last Updated: April 23, 2016
+
+========================================================================== */
+
+
+// Import Base
+@import "style.scss";
+
+// Styleguide
+.panel-block {
+  border: 1px solid #eee;
+}
+.colour { height: 140px; }
+.black-bg { background-color: $black; }
+.dark-grey-bg { background-color: $dark-grey; }
+.grey-bg { background-color: $grey; }
+.light-grey-bg { background-color: $light-grey; }
+.lighter-grey-bg { background-color: $lighter-grey; }
+.lightest-grey-bg { background-color: $lightest-grey; }
+.white-bg { background-color: $white; }

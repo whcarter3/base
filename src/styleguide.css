@@ -1,5 +1,12 @@
 /* ==========================================================================
 
+// Base Styleguide - http://getbase.org
+// Author: Matthew Hartman - http://www.matthewhartman.com.au/
+// Version: 3.0.0 - Last Updated: April 23, 2016
+
+========================================================================== */
+/* ==========================================================================
+
 // Base Stylesheet - http://getbase.org
 // Author: Matthew Hartman - http://www.matthewhartman.com.au/
 // Version: 3.0.0 - Last Updated: April 23, 2016
@@ -2077,3 +2084,30 @@ html input[disabled] {
     page-break-after: avoid; }
   abbr[title]:after {
     content: " (" attr(title) ")"; } }
+
+.panel-block {
+  border: 1px solid #eee; }
+
+.colour {
+  height: 140px; }
+
+.black-bg {
+  background-color: #000; }
+
+.dark-grey-bg {
+  background-color: #2e2e2e; }
+
+.grey-bg {
+  background-color: #666; }
+
+.light-grey-bg {
+  background-color: #999; }
+
+.lighter-grey-bg {
+  background-color: #eee; }
+
+.lightest-grey-bg {
+  background-color: #f1f1f1; }
+
+.white-bg {
+  background-color: #fff; }

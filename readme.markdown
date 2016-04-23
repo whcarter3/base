@@ -16,7 +16,7 @@ Lightweight and minimal code. Spend less time overriding styles and focus more t
 - [ ] Update favicons
 
 ### SCSS/LESS/CSS
-- [x] Refactor resets file using normalize v4
+- [x] Refactored base to use normalize v4.1.1
 - [x] Add more variables for controlling form elements
 - [x] Update typography and headings
 - [x] Update grid column naming (-m, -l, -xl)

@@ -6,10 +6,35 @@
 .clear:before, .clear:after { content: " "; display: table; } .clear:after { clear: both; }
 .row:before, .row:after { content: ""; display: table; } .row:after { clear: both; }
 
+// Rows
 .row {
   position: relative;
   margin-left: -$grid-gutter;
   margin-right: -$grid-gutter;
+}
+// Medium Device Row
+@media only screen and (min-width: $breakpoint-m) {
+  .row-m {
+    position: relative;
+    margin-left: -$grid-gutter-m;
+    margin-right: -$grid-gutter-m;
+  }
+}
+// Large Device Row
+@media only screen and (min-width: $breakpoint-l) {
+  .row-l {
+    position: relative;
+    margin-left: -$grid-gutter-l;
+    margin-right: -$grid-gutter-l;
+  }
+}
+// Extra Large Device Row
+@media only screen and (min-width: $breakpoint-m) {
+  .row-xl {
+    position: relative;
+    margin-left: -$grid-gutter-xl;
+    margin-right: -$grid-gutter-xl;
+  }
 }
 
 // Container
@@ -98,7 +123,16 @@
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12,
+.col-1-2,
+.col-1-3,
+.col-2-3,
+.col-1-4,
+.col-3-4,
+.col-1-5,
+.col-2-5,
+.col-3-5,
+.col-4-5 {
   padding-left: $grid-gutter;
   padding-right: $grid-gutter;
   position: relative;
@@ -112,6 +146,15 @@ $columns: 12;
     width: ($i / $columns) * 100%;
   }
 }
+.col-1-2 { width: (6 / 12) * 100%; }
+.col-1-3 { width: (4 / 12) * 100%; }
+.col-2-3 { width: (8 / 12) * 100%; }
+.col-1-4 { width: (3 / 12) * 100%; }
+.col-3-4 { width: (9 / 12) * 100%; }
+.col-1-5 { width: (2.4 / 12) * 100%; }
+.col-2-5 { width: (4.8 / 12) * 100%; }
+.col-3-5 { width: (7.2 / 12) * 100%; }
+.col-4-5 { width: (9.6 / 12) * 100%; }
 
 // Mobile Push Offsets
 @for $i from 1 through $columns - 1 {
@@ -143,7 +186,16 @@ $columns: 12;
   .col-9-m,
   .col-10-m,
   .col-11-m,
-  .col-12-m {
+  .col-12-m,
+  .col-1-2-m,
+  .col-1-3-m,
+  .col-2-3-m,
+  .col-1-4-m,
+  .col-3-4-m,
+  .col-1-5-m,
+  .col-2-5-m,
+  .col-3-5-m,
+  .col-4-5-m {
     padding-left: $grid-gutter-m;
     padding-right: $grid-gutter-m;
     position: relative;
@@ -157,6 +209,15 @@ $columns: 12;
       width: ($i / $columns) * 100%;
     }
   }
+  .col-1-2-m { width: (6 / 12) * 100%; }
+  .col-1-3-m { width: (4 / 12) * 100%; }
+  .col-2-3-m { width: (8 / 12) * 100%; }
+  .col-1-4-m { width: (3 / 12) * 100%; }
+  .col-3-4-m { width: (9 / 12) * 100%; }
+  .col-1-5-m { width: (2.4 / 12) * 100%; }
+  .col-2-5-m { width: (4.8 / 12) * 100%; }
+  .col-3-5-m { width: (7.2 / 12) * 100%; }
+  .col-4-5-m { width: (9.6 / 12) * 100%; }
 
   // Medium Device Push Offsets
   @for $i from 1 through $columns - 1 {
@@ -189,7 +250,16 @@ $columns: 12;
   .col-9-l,
   .col-10-l,
   .col-11-l,
-  .col-12-l {
+  .col-12-l,
+  .col-1-2-l,
+  .col-1-3-l,
+  .col-2-3-l,
+  .col-1-4-l,
+  .col-3-4-l,
+  .col-1-5-l,
+  .col-2-5-l,
+  .col-3-5-l,
+  .col-4-5-l {
     padding-left: $grid-gutter-l;
     padding-right: $grid-gutter-l;
     position: relative;
@@ -203,6 +273,15 @@ $columns: 12;
       width: ($i / $columns) * 100%;
     }
   }
+  .col-1-2-l { width: (6 / 12) * 100%; }
+  .col-1-3-l { width: (4 / 12) * 100%; }
+  .col-2-3-l { width: (8 / 12) * 100%; }
+  .col-1-4-l { width: (3 / 12) * 100%; }
+  .col-3-4-l { width: (9 / 12) * 100%; }
+  .col-1-5-l { width: (2.4 / 12) * 100%; }
+  .col-2-5-l { width: (4.8 / 12) * 100%; }
+  .col-3-5-l { width: (7.2 / 12) * 100%; }
+  .col-4-5-l { width: (9.6 / 12) * 100%; }
 
   // Large Device Push Offsets
   @for $i from 1 through $columns - 1 {
@@ -235,7 +314,16 @@ $columns: 12;
   .col-9-xl,
   .col-10-xl,
   .col-11-xl,
-  .col-12-xl {
+  .col-12-xl,
+  .col-1-2-xl,
+  .col-1-3-xl,
+  .col-2-3-xl,
+  .col-1-4-xl,
+  .col-3-4-xl,
+  .col-1-5-xl,
+  .col-2-5-xl,
+  .col-3-5-xl,
+  .col-4-5-xl {
     padding-left: $grid-gutter-xl;
     padding-right: $grid-gutter-xl;
     position: relative;
@@ -249,6 +337,15 @@ $columns: 12;
       width: ($i / $columns) * 100%;
     }
   }
+  .col-1-2-xl { width: (6 / 12) * 100%; }
+  .col-1-3-xl { width: (4 / 12) * 100%; }
+  .col-2-3-xl { width: (8 / 12) * 100%; }
+  .col-1-4-xl { width: (3 / 12) * 100%; }
+  .col-3-4-xl { width: (9 / 12) * 100%; }
+  .col-1-5-xl { width: (2.4 / 12) * 100%; }
+  .col-2-5-xl { width: (4.8 / 12) * 100%; }
+  .col-3-5-xl { width: (7.2 / 12) * 100%; }
+  .col-4-5-xl { width: (9.6 / 12) * 100%; }
 
   // Extra Large Device Push Offsets
   @for $i from 1 through $columns - 1 {
