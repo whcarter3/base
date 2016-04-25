@@ -6,14 +6,44 @@
 
 ========================================================================== */
 
+// Import Custom Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,100,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+// Styleguide
+$base-font-family: "Raleway", sans-serif;
+$base-heading-font-family: "Raleway", sans-serif;
 
 // Import Base
 @import "style.scss";
 
-// Styleguide
-.panel-block {
-  border: 1px solid #eee;
+.header {
+  background-color: $dark-grey;
+  color: $white;
 }
+.list-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-menu-link {
+  color: $white;
+  &:hover, &:focus {
+    color: $lightest-grey;
+  }
+}
+.description-block {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.panel-block {
+  border: 1px solid $lightest-grey;;
+}
+.white { color: $white; }
 .colour { height: 140px; }
 .black-bg { background-color: $black; }
 .dark-grey-bg { background-color: $dark-grey; }

@@ -105,7 +105,10 @@ abbr[title], .abbr[title] {
 dfn { font-style: italic; }
 
 // Small
-small, .small { font-size: 80%; }
+small, .small {
+  @include font-size(13);
+  @include line-height(16);
+}
 
 // Mark
 mark, .mark {
@@ -136,6 +139,6 @@ hr, .hr {
   height: 1px;
   background: #eee;
   border: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

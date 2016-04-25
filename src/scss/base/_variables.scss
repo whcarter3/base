@@ -8,9 +8,9 @@ $base-font-family:                              sans-serif !default;
 $base-font-size:                                16 !default;
 $base-line-height:                              22 !default;
 $base-font-weight:                              400 !default;
-$base-font-color:                               #222 !default;
+$base-font-color:                               #2e2e2e !default;
 $base-link-color:                               #000 !default;
-$base-link-color-hover:                         #222 !default;
+$base-link-color-hover:                         #000 !default;
 
 // Font Weights
 $font-100:                                      100 !default;
@@ -27,35 +27,33 @@ $font-900:                                      900 !default;
 $base-heading-font-family:                      sans-serif !default;
 $base-h1-font-size:                             32 !default;
 $base-h1-line-height:                           38 !default;
-$base-h1-font-weight:                           400 !default;
-$base-h1-color:                                 #111 !default;
+$base-h1-font-weight:                           700 !default;
+$base-h1-color:                                 #1e1e1e !default;
 $base-h2-font-size:                             26 !default;
 $base-h2-line-height:                           32 !default;
-$base-h2-font-weight:                           400 !default;
-$base-h2-color:                                 #111 !default;
+$base-h2-font-weight:                           700 !default;
+$base-h2-color:                                 #1e1e1e !default;
 $base-h3-font-size:                             22 !default;
 $base-h3-line-height:                           28 !default;
-$base-h3-font-weight:                           400 !default;
-$base-h3-color:                                 #111 !default;
+$base-h3-font-weight:                           700 !default;
+$base-h3-color:                                 #1e1e1e !default;
 $base-h4-font-size:                             18 !default;
 $base-h4-line-height:                           24 !default;
-$base-h4-font-weight:                           400 !default;
-$base-h4-color:                                 #111 !default;
+$base-h4-font-weight:                           700 !default;
+$base-h4-color:                                 #1e1e1e !default;
 $base-h5-font-size:                             16 !default;
 $base-h5-line-height:                           22 !default;
-$base-h5-font-weight:                           400 !default;
-$base-h5-color:                                 #111 !default;
+$base-h5-font-weight:                           700 !default;
+$base-h5-color:                                 #1e1e1e !default;
 $base-h6-font-size:                             14 !default;
 $base-h6-line-height:                           20 !default;
-$base-h6-font-weight:                           400 !default;
-$base-h6-color:                                 #111 !default;
+$base-h6-font-weight:                           700 !default;
+$base-h6-color:                                 #1e1e1e !default;
 
 // Blockquotes
 $base-blockquote-font-family:                   sans-serif !default;
 $base-blockquote-font-size:                     22 !default;
 $base-blockquote-line-height:                   28 !default;
-$base-blockquote-color:                         #424242 !default;
-$base-blockquote-cite-color:                    #777 !default;
 
 // Code
 $base-code-font-family:                         monospace, monospace !default;
@@ -68,7 +66,7 @@ $base-code-border-color:                        #d7d7d7 !default;
 // Forms
 $base-input-height:                             36px !default;
 $base-input-placeholder-color:                  #999 !default;
-$base-input-color:                              #222 !default;
+$base-input-color:                              #2e2e2e !default;
 $base-input-background-color:                   #fff !default;
 $base-input-background-color-focus:             #fff !default;
 $base-input-border-color:                       #ccc !default;
@@ -94,8 +92,8 @@ $breakpoint-xl:                                 ($container-xl + 20) !default;
 // Colours
 $black:                                         #000;
 $dark-grey:                                     #2e2e2e;
-$grey:                                          #666;
-$light-grey:                                    #999;
-$lighter-grey:                                  #eee;
+$grey:                                          #555;
+$light-grey:                                    #ccc;
+$lighter-grey:                                  #e7eceb;
 $lightest-grey:                                 #f1f1f1;
 $white:                                         #fff;
