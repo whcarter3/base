@@ -24,8 +24,8 @@ gulp.task('sass', function () {
       return "Failed to Compile SCSS: " + error.message;
     })))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./src/'))
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./src/css/'))
+    .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -42,7 +42,7 @@ gulp.task('styleguide', function () {
     return "Failed to Compile Styleguide SCSS: " + error.message;
   })))
   .pipe(autoprefixer())
-  .pipe(gulp.dest('./src/'))
+  .pipe(gulp.dest('./src/css/'))
   .pipe(browserSync.reload({
     stream: true
   }))

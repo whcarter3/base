@@ -7,10 +7,10 @@ Lightweight and minimal code. Spend less time overriding styles and focus more t
 
 ### HTML
 - [ ] Clean up index.html file
-- [ ] Add basic styleguide
+- [x] Add basic styleguide
 
 ### JS
-- [ ] Update jQuery to latest
+- [x] Update jQuery to latest
 
 ### Images
 - [ ] Update favicons
