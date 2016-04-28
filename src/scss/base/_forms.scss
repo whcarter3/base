@@ -37,7 +37,7 @@ textarea {
 [type="number"],
 [type="date"] {
   height: $base-input-height;
-  padding: 0 10px;
+  padding: 10px;
   background-color: $base-input-background-color;
   border: 1px solid $base-input-border-color;
   -webkit-appearance: none;
@@ -78,6 +78,7 @@ textarea {
 
 // Text Area
 textarea {
+  padding: 10px;
   background-color: $base-input-background-color;
   border: 1px solid $base-input-border-color;
   overflow: auto;
@@ -107,6 +108,7 @@ optgroup { font-weight: $font-700; }
 button {
   overflow: visible;
   text-transform: none;
+  cursor: pointer;
 }
 
 button,
@@ -133,7 +135,7 @@ button:-moz-focusring,
 
 button[disabled],
 html input[disabled] {
-  cursor: default;
+  cursor: not-allowed;
 }
 
 

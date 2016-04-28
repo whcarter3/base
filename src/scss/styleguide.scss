@@ -6,19 +6,24 @@
 
 ========================================================================== */
 
-// Import Custom Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,100,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+// Styleguide Variables
 
-// Styleguide
-$base-font-family: "Raleway", sans-serif;
-$base-heading-font-family: "Raleway", sans-serif;
+// Colours
+$light-yellow:                                  #feff6f;
+$black:                                         #000;
+$dark-grey:                                     #2e2e2e;
+$grey:                                          #555;
+$light-grey:                                    #ccc;
+$lighter-grey:                                  #e7eceb;
+$lightest-grey:                                 #f1f1f1;
+$white:                                         #fff;
 
 // Import Base
 @import "style.scss";
 
 .header {
-  background-color: $dark-grey;
-  color: $white;
+  background-color: $light-yellow;
+  color: $dark-grey;
 }
 .list-menu {
   list-style: none;
@@ -30,9 +35,9 @@ $base-heading-font-family: "Raleway", sans-serif;
   margin-right: 10px;
 }
 .list-menu-link {
-  color: $white;
+  color: $dark-grey;
   &:hover, &:focus {
-    color: $lightest-grey;
+    color: $black;
   }
 }
 .description-block {
@@ -45,6 +50,7 @@ $base-heading-font-family: "Raleway", sans-serif;
 }
 .white { color: $white; }
 .colour { height: 140px; }
+.light-yellow-bg { background-color: $light-yellow; }
 .black-bg { background-color: $black; }
 .dark-grey-bg { background-color: $dark-grey; }
 .grey-bg { background-color: $grey; }

@@ -155,6 +155,7 @@ $columns: 12;
 .col-2-5 { width: (4.8 / 12) * 100%; }
 .col-3-5 { width: (7.2 / 12) * 100%; }
 .col-4-5 { width: (9.6 / 12) * 100%; }
+.col-full { width: 100%; }
 
 // Mobile Push Offsets
 @for $i from 1 through $columns - 1 {
@@ -218,6 +219,7 @@ $columns: 12;
   .col-2-5-m { width: (4.8 / 12) * 100%; }
   .col-3-5-m { width: (7.2 / 12) * 100%; }
   .col-4-5-m { width: (9.6 / 12) * 100%; }
+  .col-full-m { width: 100%; }
 
   // Medium Device Push Offsets
   @for $i from 1 through $columns - 1 {
@@ -282,6 +284,7 @@ $columns: 12;
   .col-2-5-l { width: (4.8 / 12) * 100%; }
   .col-3-5-l { width: (7.2 / 12) * 100%; }
   .col-4-5-l { width: (9.6 / 12) * 100%; }
+  .col-full-l { width: 100%; }
 
   // Large Device Push Offsets
   @for $i from 1 through $columns - 1 {
@@ -346,6 +349,7 @@ $columns: 12;
   .col-2-5-xl { width: (4.8 / 12) * 100%; }
   .col-3-5-xl { width: (7.2 / 12) * 100%; }
   .col-4-5-xl { width: (9.6 / 12) * 100%; }
+  .col-full-xl { width: 100%; }
 
   // Extra Large Device Push Offsets
   @for $i from 1 through $columns - 1 {
