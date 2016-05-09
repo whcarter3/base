@@ -2,6 +2,7 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     path = require('path'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
@@ -16,6 +17,7 @@ var gulp = require('gulp'),
 // Task to compile SCSS
 gulp.task('sass', function () {
   return gulp.src('./src/scss/style.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
       errLogToConsole: false,
       paths: [ path.join(__dirname, 'scss', 'includes') ]
@@ -24,6 +26,7 @@ gulp.task('sass', function () {
       return "Failed to Compile SCSS: " + error.message;
     })))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./src/css/'))
     .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.reload({
@@ -34,6 +37,7 @@ gulp.task('sass', function () {
 
 gulp.task('styleguide', function () {
   return gulp.src('./src/scss/styleguide.scss')
+  .pipe(sourcemaps.init())
   .pipe(sass({
     errLogToConsole: false,
     paths: [ path.join(__dirname, 'scss', 'includes') ]
@@ -42,6 +46,7 @@ gulp.task('styleguide', function () {
     return "Failed to Compile Styleguide SCSS: " + error.message;
   })))
   .pipe(autoprefixer())
+  .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('./src/css/'))
   .pipe(browserSync.reload({
     stream: true
