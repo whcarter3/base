@@ -1,8 +1,10 @@
 // Base Gulp File
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
+    postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
+    //postcss-svg-fragments = require('postcss-svg-fragments'),
     path = require('path'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
@@ -25,6 +27,9 @@ gulp.task('sass', function () {
     .on("error", notify.onError(function(error) {
       return "Failed to Compile SCSS: " + error.message;
     })))
+    .pipe(postcss([require('postcss-svg-fragments')({
+      encoding: 'base64'
+    })]))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./src/css/'))

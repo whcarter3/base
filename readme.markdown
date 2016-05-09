@@ -28,7 +28,7 @@ Lightweight and minimal code. Spend less time overriding styles and focus more t
 - [ ] Separate LESS version into another branch and make SCSS default
 
 ### Build Tool
-- [ ] Add new plugin to manage fill colours and base64 encode SVGs
+- [x] Add new plugin to manage fill colours and base64 encode SVGs
 
 ### Documentation
 - [ ] Update docs website

@@ -1,7 +1,7 @@
 # Base 2 Change Log
 
 
-## [3.0.0] - 2016-04-23
+## [3.0.0] - 2016-05-10
 ### Base V3.0.0
 - Refactored base to use normalize v4.1.1
 - Updated default jQuery version to 1.12.3
@@ -11,6 +11,7 @@
 - Added styleguide
 - Refactored grid to use new names ( .col-# [mobile first], .col-#-m [medium devices], .col-#-l [large devices], .col-#-xl [hd devices] )
 - Added new grid columns (1-2, 1-3, 2-3, 1-4, 3-4, 1-5, 2-5, 3-5, 4-5) for all devices
+- Added gulp source maps for CSS
 - Minor cleanup in gulpfile.js
 - Version bump package.json and bower.json
 - Version bump style.less/style.scss
